@@ -8,7 +8,10 @@
 
 <title>[ thread, stitch, rend ]</title>
 
+<!-- game data  -->
+
 <script type="text/bitsyGameData" id="exportedGameData">
+
 [ thread, stitch, rend ]
 
 # BITSY VERSION 8.14
@@ -585,6 +588,8 @@ SQR P4
 
 </script>
 
+<!-- css styling of html web page -->
+
 <style>
 html {
 	margin:0px;
@@ -609,7 +614,10 @@ body {
 </style>
 
 <!-- SCRIPTS -->
+
+<!-- js script to export game -->
 <script>
+
 function startExportedGame() {
 	var gameCanvas = document.getElementById("game");
 	var gameData = document.getElementById("exportedGameData").text.slice(1);
@@ -620,10 +628,13 @@ function startExportedGame() {
 </script>
 
 <!-- system -->
+
+<!-- js script for game input controls-->
 <script>
 function InputSystem() {
 	var self = this;
 
+	// assigning keybinds 
 	this.Key = {
 		LEFT: 37,
 		RIGHT: 39,
@@ -642,12 +653,15 @@ function InputSystem() {
 		CMD: 224
 	};
 
+	// initializing vars for states
 	var pressed;
 	var ignored;
 	var touchState;
 
+	// ?
 	var isRestartComboPressed = false;
 
+	// assigning vars for swipe direction
 	var SwipeDir = {
 		None : -1,
 		Up : 0,
