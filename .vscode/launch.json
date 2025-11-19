@@ -11,5 +11,12 @@
             "name": "Open concrete-poetry.html",
             "file": "/Users/kayla/Documents/GitHub/CT-120/Concrete-Poetry-Exercise/concrete-poetry.html"
         }
+,
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open Katabasis.html",
+            "file": "/Users/kayla/Documents/GitHub/CT-120/Stitch-Project/Katabasis.html"
+        }
     ]
 }
